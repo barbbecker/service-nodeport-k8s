@@ -16,10 +16,12 @@ spec:
         app: hello-barbara
     spec:
       containers:
-      - image: bbeckerdarosa/hello-barbara-1:latest
+      - image: bbeckerdarosa/hello-barbara-4:latest
         name: hello-barbara-1
         imagePullPolicy: Always
-        resources: {}
+        env:
+          - name: TESTE
+            value: Utilizando variavel de ambiente
         ports:
           - containerPort: 5000
 status: {}
