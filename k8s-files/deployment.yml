@@ -16,9 +16,9 @@ spec:
         app: hello-barbara
     spec:
       containers:
-      - image: bbeckerdarosa/hello-barbara-3:latest
+      - image: bbeckerdarosa/hello-barbara-1:latest
         imagePullPolicy: Always
-        name: hello-barbara-3
+        name: hello-barbara-1
         resources: {}
         ports:
           - containerPort: 5000
