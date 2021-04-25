@@ -16,7 +16,7 @@ spec:
         app: hello-barbara
     spec:
       containers:
-      - image: bbeckerdarosa/hello-barbara-4:latest
+      - image: bbeckerdarosa/hello-barbara-1:latest
         name: hello-barbara-1
         imagePullPolicy: Always
         env:

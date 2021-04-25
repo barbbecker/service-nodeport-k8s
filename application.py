@@ -3,8 +3,7 @@ app = Flask(__name__)
 
 @app.route('/app')
 def hello():
-    string = 'Hello World :) + ' + $TESTE
-    return string
+    return 'Hello Word :)'
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
