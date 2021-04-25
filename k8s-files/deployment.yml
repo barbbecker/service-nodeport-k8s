@@ -2,18 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    run: hello-barbara
+    app: hello-barbara
   name: hello-barbara
   namespace: default
 spec:
   replicas: 3
   selector:
     matchLabels:
-      run: hello-barbara
+      app: hello-barbara
   template:
     metadata:
       labels:
-        run: hello-barbara
+        app: hello-barbara
     spec:
       containers:
       - image: bbeckerdarosa/hello-barbara-3:latest
