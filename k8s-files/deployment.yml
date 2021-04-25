@@ -2,23 +2,24 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: hello-barbara
+    run: hello-barbara
   name: hello-barbara
+  namespace: default
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: hello-barbara
+      run: hello-barbara
   template:
     metadata:
       labels:
-        app: hello-barbara
+        run: hello-barbara
     spec:
       containers:
       - image: bbeckerdarosa/hello-barbara-1:latest
-        name: hello-barbara-1
         imagePullPolicy: Always
+        name: hello-barbara-1
         resources: {}
         ports:
-          - containerPort: 5000
-status: {}
+          - containerPort: 80
+      restartPolicy: Always

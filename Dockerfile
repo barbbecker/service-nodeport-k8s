@@ -6,6 +6,6 @@ WORKDIR /app/
 
 COPY application.py .
 
-EXPOSE 5000
+EXPOSE 80
 
 CMD ["python", "application.py"]
