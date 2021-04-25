@@ -4,12 +4,11 @@ metadata:
   name: hello-barbara
   labels:
     run: hello-barbara
-  namespace: default
 spec:
   ports:
-  - nodePort: 32145
-    port: 5000
-    targetPort: 5000   
+  - port: 5000
+    nodePort: 32145
+    protocol: TCP
   selector:
     app: hello-barbara
-  type: NodePort 
+  type: NodePort

@@ -1,10 +1,10 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
     app: hello-barbara
   name: hello-barbara
-  namespace: default
 spec:
   replicas: 3
   selector:
@@ -17,9 +17,9 @@ spec:
     spec:
       containers:
       - image: bbeckerdarosa/hello-barbara-1:latest
-        imagePullPolicy: Always
         name: hello-barbara-1
+        imagePullPolicy: Always
         resources: {}
         ports:
           - containerPort: 5000
-      restartPolicy: Always
+status: {}
