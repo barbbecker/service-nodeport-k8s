@@ -21,5 +21,5 @@ spec:
         name: hello-barbara-1
         resources: {}
         ports:
-          - containerPort: 80
+          - containerPort: 5000
       restartPolicy: Always

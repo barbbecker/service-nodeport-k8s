@@ -8,8 +8,8 @@ metadata:
 spec:
   ports:
   - nodePort: 32145
-    port: 80
-    targetPort: 80   
+    port: 5000
+    targetPort: 5000   
   selector:
     run: hello-barbara
   type: NodePort 
