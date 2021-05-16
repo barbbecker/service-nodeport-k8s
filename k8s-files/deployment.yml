@@ -21,4 +21,10 @@ spec:
         imagePullPolicy: Always
         ports:
           - containerPort: 5000
+        env:
+        - name: MEU_TESTE
+          valueFrom:
+            secretKeyRef:
+              name: my-secret
+              key: user
 status: {}
