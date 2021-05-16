@@ -1,14 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: teste-6
   labels:
     run: teste-6
+  name: teste-6
+  namespace: default
 spec:
   ports:
   - port: 5000
-    nodePort: 31145
     protocol: TCP
+    targetPort: 5000
   selector:
     app: teste-6
-  type: NodePort
+  type: ClusterIP

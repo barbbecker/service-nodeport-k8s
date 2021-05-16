@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-teste-6
+  namespace: default
+spec:
+  rules:
+  - host: "barbara.teste-6.poc.in"
+    http:
+      paths:
+      - path: "/"
+        backend:
+          serviceName: teste-6
+          servicePort: 5000
