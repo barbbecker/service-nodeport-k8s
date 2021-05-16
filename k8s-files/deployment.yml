@@ -3,21 +3,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: hello-barbara
-  name: hello-barbara
+    app: teste-6
+  name: teste-6
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: hello-barbara
+      app: teste-6
   template:
     metadata:
       labels:
-        app: hello-barbara
+        app: teste-6
     spec:
       containers:
-      - image: bbeckerdarosa/hello-barbara-env:latest
-        name: hello-barbara-env
+      - image: bbeckerdarosa/teste-6:latest
+        name: teste-6
         imagePullPolicy: Always
         ports:
           - containerPort: 5000
